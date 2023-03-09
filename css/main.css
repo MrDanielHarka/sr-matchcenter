@@ -4,9 +4,28 @@ html {
   background-color: white;
 }
 
-.card {
-  width: 100%;
+.sport-section h2 {
+  text-align: center;
 }
-.card__image {
-  border-radius: 25px;
+
+.country-section {
+  margin: 1rem;
+}
+.country-section__title {
+  background-color: #1C1D1D;
+  color: white;
+  border-radius: 4px 4px 0px 0px;
+  padding: 0.5rem;
+  margin: 5px;
+}
+.country-section__item {
+  display: flex;
+  align-items: center;
+  color: #161615;
+  border-bottom: 1px solid #EFF0F0;
+  padding: 10px 34.3px;
+}
+.country-section__item img {
+  max-width: 30px;
+  padding-right: 26.3px;
 }/*# sourceMappingURL=main.css.map */
