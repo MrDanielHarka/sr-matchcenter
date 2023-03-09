@@ -29,6 +29,9 @@ https://xd.adobe.com/view/730cecba-eeec-4ca1-928a-06ea9b44ecf9-265f/
 - [ ] Check the font-family: 'Mont Heavy' font.
 - [ ] Compress images.
 - [ ] Language switcher.
+- [ ] Font type.
+- [ ] flex wrapping of the item inside the box.
+- [ ] hover effect.
 
 **Coding**
 

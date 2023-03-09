@@ -4,6 +4,10 @@ html {
   background-color: #eff0f0;
 }
 
+a {
+  display: block;
+  text-decoration: none;
+}
 .sport-section {
   h2 {
     text-align: center;
@@ -15,6 +19,16 @@ html {
   box-shadow: rgb(28 29 29 / 8%) 0 0.75em 1.5em;
   max-width: 932px;
   margin: auto;
+  padding: 1rem;
+  
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+
+    
+  }
+
 
   &__title {
     background-color: #1c1d1d;
@@ -32,10 +46,18 @@ html {
     padding: 10px 15px;
     font-weight: bold;
     background-color: #fff;
+    display: flex;
+    width: 466px;
+    border:solid;
+
+    &:hover {
+      background-color: rgba(255,255,255,.5);
+     }
 
     img {
       width: 50px;
       padding-right: 26.3px;
     }
   }
+
 }

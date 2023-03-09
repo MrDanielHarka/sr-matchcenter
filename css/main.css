@@ -4,6 +4,11 @@ html {
   background-color: #eff0f0;
 }
 
+a {
+  display: block;
+  text-decoration: none;
+}
+
 .sport-section h2 {
   text-align: center;
 }
@@ -13,6 +18,12 @@ html {
   box-shadow: rgba(28, 29, 29, 0.08) 0 0.75em 1.5em;
   max-width: 932px;
   margin: auto;
+  padding: 1rem;
+}
+.country-section__box {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
 }
 .country-section__title {
   background-color: #1c1d1d;
@@ -29,6 +40,12 @@ html {
   padding: 10px 15px;
   font-weight: bold;
   background-color: #fff;
+  display: flex;
+  width: 466px;
+  border: solid;
+}
+.country-section__item:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 .country-section__item img {
   width: 50px;
