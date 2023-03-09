@@ -20,15 +20,12 @@ a {
   max-width: 932px;
   margin: auto;
   padding: 1rem;
-  
+
   &__box {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-
-    
   }
-
 
   &__title {
     background-color: #1c1d1d;
@@ -48,16 +45,15 @@ a {
     background-color: #fff;
     display: flex;
     width: 466px;
-    border:solid;
+    border: solid;
 
     &:hover {
-      background-color: rgba(255,255,255,.5);
-     }
+      background-color: rgba(255, 255, 255, 0.5);
+    }
 
     img {
       width: 50px;
       padding-right: 26.3px;
     }
   }
-
 }
