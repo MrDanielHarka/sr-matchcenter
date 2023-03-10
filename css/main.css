@@ -21,6 +21,8 @@ a {
 .country-section__padding {
   margin: 1rem;
   box-shadow: rgba(28, 29, 29, 0.08) 0 0.75em 1.5em;
+  border-radius: 4px;
+  overflow: hidden;
 }
 .country-section__box {
   display: flex;
@@ -30,8 +32,7 @@ a {
 .country-section__title {
   background-color: #1c1d1d;
   color: white;
-  border-radius: 4px 4px 0px 0px;
-  padding: 0.5rem;
+  padding: 13px 0 13px 16px;
   margin: 0px;
 }
 .country-section__item {
@@ -48,11 +49,11 @@ a {
   width: 100%;
 }
 .country-section__item:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #eff0f0;
 }
 .country-section__item img {
   width: 50px;
-  padding-right: 26.3px;
+  padding: 6px 26px 6px 30px;
 }
 
 @media only screen and (min-width: 600px) {

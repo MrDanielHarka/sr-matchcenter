@@ -19,24 +19,23 @@ a {
   max-width: 932px;
   margin: auto;
 
-  &__padding{
+  &__padding {
     margin: 1rem;
     box-shadow: rgb(28 29 29 / 8%) 0 0.75em 1.5em;
+    border-radius: 4px;
+    overflow: hidden;
   }
 
   &__box {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-
-   
   }
 
   &__title {
     background-color: #1c1d1d;
     color: white;
-    border-radius: 4px 4px 0px 0px;
-    padding: 0.5rem;
+    padding: 13px 0 13px 16px;
     margin: 0px;
   }
 
@@ -45,11 +44,9 @@ a {
     align-items: center;
     color: #161615;
     border-bottom: 1px solid #eff0f0;
-    //padding: 10px 15px;
     font-weight: bold;
     background-color: #fff;
     display: flex;
-    //width: 466px;
     width: 100%;
 
     &:last-child:nth-child(odd) {
@@ -57,17 +54,17 @@ a {
     }
 
     &:hover {
-      background-color: rgba(255, 255, 255, 0.5);
+      background-color: #eff0f0;
     }
 
     img {
       width: 50px;
-      padding-right: 26.3px;
+      padding: 6px 26px 6px 30px;
     }
   }
 }
 
-@media only screen and (min-width: 600px ) {
+@media only screen and (min-width: 600px) {
   .country-section__item {
     width: 50%;
   }
