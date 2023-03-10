@@ -16,15 +16,20 @@ a {
 
 .country-section {
   margin: 1rem;
-  box-shadow: rgb(28 29 29 / 8%) 0 0.75em 1.5em;
   max-width: 932px;
   margin: auto;
-  padding: 1rem;
+
+  &__padding{
+    margin: 1rem;
+    box-shadow: rgb(28 29 29 / 8%) 0 0.75em 1.5em;
+  }
 
   &__box {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
+
+   
   }
 
   &__title {
@@ -40,13 +45,16 @@ a {
     align-items: center;
     color: #161615;
     border-bottom: 1px solid #eff0f0;
-    padding: 10px 15px;
+    //padding: 10px 15px;
     font-weight: bold;
     background-color: #fff;
     display: flex;
-    width: 466px;
+    //width: 466px;
     width: 100%;
-    border: solid;
+
+    &:last-child:nth-child(odd) {
+      width: 100%;
+    }
 
     &:hover {
       background-color: rgba(255, 255, 255, 0.5);
@@ -56,5 +64,11 @@ a {
       width: 50px;
       padding-right: 26.3px;
     }
+  }
+}
+
+@media only screen and (min-width: 600px ) {
+  .country-section__item {
+    width: 50%;
   }
 }
