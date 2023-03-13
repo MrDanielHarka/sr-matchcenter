@@ -13,12 +13,12 @@ https://xd.adobe.com/view/730cecba-eeec-4ca1-928a-06ea9b44ecf9-265f/
 
 **Additional tasks**
 
-- [ ] work mobile first
+- [x] work mobile first
 - [ ] implement light/dark mode
 - [ ] left-to-right and right-to-left support
 - [ ] Add Animations -> add support for reduced motion
 - [ ] Be sure that keyboard only navigation is easy to use
-- [ ] try to have a nice folder structure
+- [x] try to have a nice folder structure
 - [ ] have the best lighthouse score possible
 - [ ] Have a nice version of a print CSS
 - [ ] Support user settings for font-sizes
@@ -26,12 +26,11 @@ https://xd.adobe.com/view/730cecba-eeec-4ca1-928a-06ea9b44ecf9-265f/
 **Random tasks**
 
 - [x] Add Live SCSS Compiler and SCSS files
-- [ ] Check the font-family: 'Mont Heavy' font.
+- [x] Check the font-family: 'Mont' font.
+- [x] Flex wrapping of the item inside the box.
+- [x] Hover effect.
 - [ ] Compress images.
 - [ ] Language switcher.
-- [ ] Font type.
-- [ ] flex wrapping of the item inside the box.
-- [ ] hover effect.
 
 **Coding**
 
