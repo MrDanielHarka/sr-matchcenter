@@ -38,6 +38,10 @@
   font-display: swap;
   src: url(../fonts/Mont-Trial-HeavyItalic.woff2) format("woff2"), url(../fonts/Mont-Trial-HeavyItalic.woff) format("woff");
 }
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 h2 {
   font-style: italic;
   font-weight: 900;
@@ -46,8 +50,8 @@ h2 {
 
 html,
 body {
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  padding: 0 0.5rem;
   height: 100%;
   width: 100%;
   background-color: #eff0f0;

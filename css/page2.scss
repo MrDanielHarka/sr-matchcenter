@@ -19,11 +19,11 @@ body {
   background-color: #BDCAC0;
 }
 .country-section {
-  margin: 1rem;
+  
   box-shadow: rgb(28 29 29 / 8%) 0 0.75em 1.5em;
   max-width: 932px;
   margin: auto;
-  padding: 1rem;
+  //padding: 1rem;
 }
 
 a {
@@ -78,7 +78,7 @@ a {
   &__options {
     width: 100%;
     overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-x: auto;
 
     scrollbar-width: thin;
     display: flex;
@@ -182,6 +182,8 @@ a {
     color: red;
     &live{
       color: white ;
+      //z-index: -1;
+      
 
       -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -189,9 +191,10 @@ a {
       order: 2;
       position: relative;
       top: 0;
+      
       &::after{
         background: red;
-        
+      
         border-radius: 4px;
         bottom: 0;
         content: "";
@@ -217,7 +220,7 @@ a {
         font-style: italic;
         font-weight: 700;
         line-height: 21px;
-        padding: 0 0.75em;
+        //padding: 0 0.75em;
         text-transform: uppercase;
 
       }
@@ -250,7 +253,7 @@ a {
     }
     &__item{
       width: 400px !important;
-      background-color: red;
+      background-color: white;
     }
     
   }
