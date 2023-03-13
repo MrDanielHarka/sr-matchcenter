@@ -308,10 +308,11 @@ a {
     flex-direction: row;
   }
   .match-picker__title {
-    width: 300px;
+    height: 90px;
+    max-width: 330px;
   }
   .match-picker__item {
-    min-width: 200px;
+    min-width: 280px;
     background-color: white;
   }
   .league__menu {
