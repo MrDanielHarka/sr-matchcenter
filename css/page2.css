@@ -103,6 +103,9 @@ a {
   width: 20px;
   height: 20px;
 }
+.match-picker__item:hover {
+  background-color: #eff0f0;
+}
 .match-picker--smallred {
   color: red;
 }
@@ -190,8 +193,14 @@ a {
 .league__menuitem {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: row;
-  padding: 5px 30px;
+  padding: 10px 30px;
+  width: 100%;
+}
+.league__menuitem:hover {
+  background-color: black;
+  width: 100%;
 }
 .league__menuitemtext {
   padding-left: 10px;
@@ -227,6 +236,9 @@ a {
 }
 .league__item img {
   width: 30px;
+}
+.league__item:hover {
+  background-color: #eff0f0;
 }
 .league__item--red {
   color: red;
