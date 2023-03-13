@@ -87,11 +87,79 @@ a {
 .match-picker__item {
   border-radius: 4px;
   background-color: #ffffff;
-  width: 300px;
-  height: 67px;
+  min-width: 230px;
+  min-height: 80px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+.match-picker__itemcontent {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  color: black;
+}
+.match-picker__item img {
+  width: 20px;
+  height: 20px;
+}
+.match-picker--smallred {
+  color: red;
+}
+.match-picker--smallredlive {
+  z-index: 1;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  margin-right: 4px;
+  order: 2;
+  position: relative;
+  top: 0;
+  min-width: 35px;
+}
+.match-picker--smallredlive::before {
+  background-color: red;
+  border-radius: 4px;
+  bottom: 0;
+  content: "Live";
+  display: block;
+  height: 21px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: skewX(-8deg);
+  transform-origin: bottom right;
+  min-width: 100%;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 21px;
+  padding: 0 0.2rem;
+  text-transform: uppercase;
+}
+.match-picker--smallredbold {
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+}
+.match-picker--smallredthin {
+  font-size: 16px;
+  font-weight: 600;
+}
+.match-picker--smallgrey {
+  text-align: center;
+}
+.match-picker--smallgreybold {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+.match-picker--smallgreytime {
+  font-size: 13px;
+  font-weight: 600;
+  color: #909090;
 }
 
 .arrow {
@@ -200,6 +268,10 @@ a {
   font-weight: 900;
   font-size: 40px;
 }
+.league__item--redthin {
+  font-size: 16px;
+  font-weight: 600;
+}
 .league__item--greytill {
   color: #909090;
   font-size: 14px;
@@ -222,6 +294,10 @@ a {
 .league__item--blackbold {
   font-weight: 900;
   font-size: 40px;
+}
+.league__item--blackthin {
+  font-size: 16px;
+  font-weight: 600;
 }
 
 @media only screen and (min-width: 660px) {
