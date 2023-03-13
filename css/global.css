@@ -25,16 +25,18 @@
 @font-face {
   font-family: Mont;
   font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/semibold.woff2) format("woff2"), url(../fonts/semibold.woff) format("woff");
+}
+@font-face {
+  font-family: Mont;
+  font-style: bold;
   font-weight: 900;
   font-stretch: normal;
   font-display: swap;
   src: url(../fonts/heavyitalic.woff2) format("woff2"), url(../fonts/heavyitalic.woff) format("woff");
-}
-@font-face {
-  font-family: Icons;
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/l1icons-2022.woff2) format("woff2"), url(../fonts/l1icons-2022.woff) format("woff");
 }
 /*
 .ico-fussball{
@@ -55,7 +57,9 @@
   width: 1em
 }
 */
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -73,4 +77,10 @@ body {
   width: 100%;
   background-color: #eff0f0;
   font-family: Mont, Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.notbold {
+  font-weight: normal;
 }/*# sourceMappingURL=global.css.map */

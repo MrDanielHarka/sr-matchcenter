@@ -134,9 +134,8 @@ a {
     }
 
     img {
-      width: 30px;
-      height: 30px;
-      //padding: 0 26px 6px 30px;
+      width: 20px;
+      height: 20px;
     }
 
     &item {
@@ -174,11 +173,10 @@ a {
       display: flex;
       align-items: center;
       max-width: 100px;
-      &inner{
+      &inner {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-
       }
 
       .arrow {
@@ -190,57 +188,91 @@ a {
       width: 30px;
     }
   }
-  &__item--red {
-    color: red;
-    &live {
-      z-index: 1;
+  &__item {
+    &--red {
+      color: red;
+      &live {
+        z-index: 1;
 
-      -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-      margin-right: 4px;
-      order: 2;
-      position: relative;
-      top: 0;
-
-      &::before {
-        background-color: red;
-        border-radius: 4px;
-        bottom: 0;
-        content: "Live Now";
-        display: block;
-        height: 21px;
-        position: absolute;
-        right: 0;
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        margin-right: 4px;
+        order: 2;
+        position: relative;
         top: 0;
-        -webkit-transform: skewX(-8deg);
-        transform: skewX(-8deg);
-        -webkit-transform-origin: bottom right;
-        transform-origin: bottom right;
-        width: 100%;
+        min-width: 71px;
 
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        color: #fff;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        font-size: 13px;
-        font-style: italic;
-        font-weight: 700;
-        line-height: 21px;
-        padding: 0 0.2rem;
-        text-transform: uppercase;
+        &::before {
+          background-color: red;
+          border-radius: 4px;
+          bottom: 0;
+          content: 'Now Live';
+          display: block;
+          height: 21px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          -webkit-transform: skewX(-8deg);
+          transform: skewX(-8deg);
+          -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+          min-width: 100%;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          color: #fff;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          font-size: 13px;
+          font-style: italic;
+          font-weight: 700;
+          line-height: 21px;
+          padding: 0 0.2rem;
+          text-transform: uppercase;
+        }
+      }
+      &bold {
+        font-weight: 900;
+        font-size: 40px;
       }
     }
-    &bold {
-      font-weight: bold;
-      font-size: 20px;
+
+    &--grey {
+      &till {
+        color: #909090;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      &bold {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 13px;
+      }
+
+      &time {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+
+    &--black {
+      &till {
+        color: #909090;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      &bold {
+        font-weight: 900;
+        font-size: 40px;
+      }
     }
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 660px) {
   .arrow {
     display: block;
   }
@@ -271,26 +303,24 @@ a {
         flex-direction: row;
       }
     }
-    &__item{
-      padding: 15px 20px 15px 50px;
-      
+    &__item {
+      // padding: 22px 20px 22px 50px;
+      height: 130px;
 
-      &home{
+      &home {
         max-width: 100%;
         flex-direction: row;
-        &text{
+        &text {
           padding: 10px;
         }
-        
       }
 
-      &away{
+      &away {
         max-width: 100%;
-        &inner{
+        &inner {
           flex-direction: row;
-          
         }
-        &text{
+        &text {
           padding: 10px;
         }
       }
