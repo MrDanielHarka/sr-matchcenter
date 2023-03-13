@@ -4,38 +4,28 @@
   font-weight: 400;
   font-stretch: normal;
   font-display: swap;
-  src: url(../fonts/Mont-Trial-Regular.woff2) format('woff2'),
-    url(../fonts/Mont-Trial-Regular.woff) format('woff');
+  src: url(../fonts/regular.woff2) format('woff2'),
+    url(../fonts/regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: Mont;
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(../fonts/bolditalic.woff2) format('woff2'),
+    url(../fonts/bolditalic.woff) format('woff');
 }
 
 @font-face {
   font-family: Mont;
   font-style: normal;
-  font-weight: 700;
-  font-stretch: normal;
-  font-display: swap;
-  src: url(../fonts/Mont-Trial-Bold.woff2) format('woff2'),
-    url(../fonts/Mont-Trial-Bold.woff) format('woff');
-}
-
-@font-face {
-  font-family: Mont;
-  font-style: italic;
   font-weight: 600;
   font-stretch: normal;
   font-display: swap;
-  src: url(../fonts/Mont-Trial-SemiBold.woff2) format('woff2'),
-    url(../fonts/Mont-Trial-SemiBold.woff) format('woff');
-}
-
-@font-face {
-  font-family: Mont;
-  font-style: italic;
-  font-weight: 700;
-  font-stretch: normal;
-  font-display: swap;
-  src: url(../fonts/Mont-Trial-BoldItalic.woff2) format('woff2'),
-    url(../fonts/Mont-Trial-BoldItalic.woff) format('woff');
+  src: url(../fonts/semibold.woff2) format('woff2'),
+    url(../fonts/semibold.woff) format('woff');
 }
 
 @font-face {
@@ -44,9 +34,39 @@
   font-weight: 900;
   font-stretch: normal;
   font-display: swap;
-  src: url(../fonts/Mont-Trial-HeavyItalic.woff2) format('woff2'),
-    url(../fonts/Mont-Trial-HeavyItalic.woff) format('woff');
+  src: url(../fonts/heavyitalic.woff2) format('woff2'),
+    url(../fonts/heavyitalic.woff) format('woff');
 }
+
+
+@font-face {
+  font-family: Icons;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/l1icons-2022.woff2) format("woff2"),
+  url(../fonts/l1icons-2022.woff) format("woff");
+}
+
+/*
+.ico-fussball{
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: Icons,sans-serif!important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 1;
+  padding-left: 1px;
+  text-transform: none
+}
+
+.ico-fussball:before {
+  display: inline-block;
+  width: 1em
+}
+*/
+
 
 *, ::after, ::before {
   box-sizing: border-box;
