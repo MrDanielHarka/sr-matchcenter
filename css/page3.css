@@ -258,13 +258,40 @@ a {
   font-weight: 600;
   color: #909090;
 }
+.league__title .picked-match__goals {
+  display: flex;
+  padding-top: 30px;
+}
+.league__title .picked-match__goalsleft, .league__title .picked-match__goalsright {
+  color: #909090;
+  display: flex;
+  flex-direction: column;
+}
+.league__title .picked-match__goalsleftcontent, .league__title .picked-match__goalsrightcontent {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.league__title .picked-match__goalscenter {
+  font-size: 15px;
+  padding: 0 25px;
+}
+.league__title .picked-match__goals img {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+}
+.league__title .picked-match__goalsspan {
+  padding: 5px;
+  color: #cdcdcd;
+}
 .league__menu {
   background: #1c1d1d 0% 0% no-repeat padding-box;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.league__menu a {
+.league__menu a:not(.league__menuitemred) {
   color: white;
 }
 .league__menu img {
@@ -286,111 +313,26 @@ a {
 .league__menuitemtext {
   padding-left: 10px;
 }
-.league__item {
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  overflow: hidden;
-  margin: 12px 0;
-  padding: 15px 20px 15px 30px;
-}
-.league__itemhome {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 100px;
-}
-.league__itemaway {
-  display: flex;
-  align-items: center;
-  max-width: 100px;
-}
-.league__itemawayinner {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-}
-.league__itemaway .arrow {
-  padding-left: 50px;
-}
-.league__item img {
-  width: 30px;
-}
-.league__item:hover {
-  background-color: #eff0f0;
-}
-.league__item--red {
+.league__menuitemred {
   color: red;
 }
-.league__item--redlive {
-  z-index: 1;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  margin-right: 4px;
-  order: 2;
-  position: relative;
-  top: 0;
-  min-width: 71px;
+
+.info__gameplace {
+  background-color: white;
 }
-.league__item--redlive::before {
-  background-color: red;
-  border-radius: 4px;
-  bottom: 0;
-  content: "Now Live";
-  display: block;
-  height: 21px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform: skewX(-8deg);
-  transform-origin: bottom right;
-  min-width: 100%;
-  align-items: center;
-  color: #fff;
-  display: flex;
-  font-size: 13px;
-  font-style: italic;
-  font-weight: 700;
-  line-height: 21px;
-  padding: 0 0.2rem;
-  text-transform: uppercase;
-}
-.league__item--redbold {
-  font-weight: 900;
-  font-size: 40px;
-}
-.league__item--redthin {
-  font-size: 16px;
-  font-weight: 600;
-}
-.league__item--greytill {
-  color: #909090;
-  font-size: 14px;
-  font-weight: 600;
-}
-.league__item--greybold {
+.info__gameplacetitle {
   font-size: 18px;
-  font-weight: bold;
-  padding: 13px;
 }
-.league__item--greytime {
-  font-size: 16px;
-  font-weight: 600;
+.info__gameplacetitle img {
+  width: 20px;
+  height: 20px;
 }
-.league__item--blacktill {
-  color: #909090;
-  font-size: 14px;
-  font-weight: 600;
+.info__gameplacecontent {
+  font-weight: 400;
 }
-.league__item--blackbold {
-  font-weight: 900;
-  font-size: 40px;
-}
-.league__item--blackthin {
-  font-size: 16px;
-  font-weight: 600;
+.info__gameplacecontent img {
+  width: 300px;
+  height: 300px;
 }
 
 @media only screen and (min-width: 660px) {
@@ -415,23 +357,7 @@ a {
   .league__menuitem {
     flex-direction: row;
   }
-  .league__item {
-    height: 130px;
-  }
-  .league__itemhome {
-    max-width: 100%;
-    flex-direction: row;
-  }
-  .league__itemhometext {
-    padding: 10px;
-  }
-  .league__itemaway {
-    max-width: 100%;
-  }
-  .league__itemawayinner {
-    flex-direction: row;
-  }
-  .league__itemawaytext {
-    padding: 10px;
+  .league__menuitemred {
+    border-bottom: 6px solid red;
   }
 }/*# sourceMappingURL=page3.css.map */

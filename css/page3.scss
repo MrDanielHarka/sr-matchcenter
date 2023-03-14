@@ -5,10 +5,10 @@ body {
 
 ::-webkit-scrollbar {
   width: 0px;
-} 
+}
 ::-webkit-scrollbar-track {
   background-color: transparent;
-} 
+}
 ::-webkit-scrollbar-thumb {
   background-color: #bdcac0;
   border-radius: 8px;
@@ -67,7 +67,7 @@ a {
     color: #ffffff;
     border-radius: 4px;
     // padding: 15px 0;
-    
+
     width: 100%;
     height: 67px;
     display: flex;
@@ -98,22 +98,21 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
-    &content{
+
+    &content {
       flex-direction: column;
       align-items: center;
       display: flex;
       color: black;
     }
 
-    img{
+    img {
       width: 20px;
       height: 20px;
     }
     &:hover {
       background-color: #eff0f0;
     }
-    
   }
   &--smallred {
     color: red;
@@ -162,7 +161,7 @@ a {
       font-size: 20px;
       text-align: center;
     }
-    &thin{
+    &thin {
       font-size: 16px;
       font-weight: 600;
     }
@@ -212,8 +211,7 @@ a {
       align-items: center;
       flex-direction: column;
       padding: 10px;
-    
-    
+
       &__item {
         border-radius: 4px;
         width: 100%;
@@ -222,20 +220,18 @@ a {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        
-        &content{
+
+        &content {
           flex-direction: column;
           align-items: center;
           display: flex;
           color: white;
         }
-    
-        img{
+
+        img {
           width: 20px;
           height: 20px;
         }
-        
-        
       }
       &--smallred {
         color: white;
@@ -247,9 +243,7 @@ a {
           position: relative;
           top: 0;
           max-width: 30px;
-          
-          
-    
+
           &::before {
             background-color: red;
             border-radius: 4px;
@@ -278,7 +272,6 @@ a {
             line-height: 21px;
             padding: 0 0.3rem;
             text-transform: uppercase;
-            
           }
         }
         &bold {
@@ -287,7 +280,7 @@ a {
           text-align: center;
           padding: 10px;
         }
-        &thin{
+        &thin {
           font-size: 14px;
           font-weight: 400;
           color: grey;
@@ -301,11 +294,45 @@ a {
           //padding: 5px;
           color: black;
         }
-    
+
         &time {
           font-size: 13px;
           font-weight: 600;
           color: #909090;
+        }
+      }
+
+      &__goals {
+        display: flex;
+        padding-top: 30px;
+        &left,
+        &right {
+          color: #909090;
+          display: flex;
+          flex-direction: column;
+
+          &content {
+            display: flex;
+            align-items: center;
+            padding-bottom: 10px;
+          }
+        }
+
+        &center {
+          font-size: 15px;
+          padding: 0 25px;
+        }
+
+        img {
+          width: 20px;
+          height: 20px;
+          margin: 0 8px;
+        }
+
+        &span {
+          padding: 5px;
+          color: #cdcdcd;
+          // font-weight: not showing :(
         }
       }
     }
@@ -317,7 +344,7 @@ a {
     flex-direction: column;
     align-items: center;
 
-    a {
+    a:not(.league__menuitemred) {
       color: white;
     }
 
@@ -333,7 +360,7 @@ a {
       flex-direction: row;
       padding: 10px 30px;
       width: 100%;
-      
+
       &:hover {
         background-color: black;
         width: 100%;
@@ -341,143 +368,35 @@ a {
       &text {
         padding-left: 10px;
       }
-      
+
+      &red {
+        color: red;
+      }
     }
   }
+}
 
-  &__item {
-    color: black;
-    display: flex;
-    // align-content: space-between;
-    align-items: center;
-    // justify-items: space-between;
-    justify-content: space-between;
+.info {
+  &__gameplace {
     background-color: white;
-    overflow: hidden;
-    margin: 12px 0;
-    padding: 15px 20px 15px 30px;
 
-    &home {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 100px;
-    }
-
-    &away {
-      display: flex;
-      align-items: center;
-      max-width: 100px;
-      &inner {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-      }
-
-      .arrow {
-        padding-left: 50px;
-      }
-      
-    }
-
-    img {
-      width: 30px;
-    }
-    &:hover {
-      background-color: #eff0f0;
-    }
-  }
-  &__item {
-    &--red {
-      color: red;
-      &live {
-        z-index: 1;
-
-        -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-        margin-right: 4px;
-        order: 2;
-        position: relative;
-        top: 0;
-        min-width: 71px;
-
-        &::before {
-          background-color: red;
-          border-radius: 4px;
-          bottom: 0;
-          content: 'Now Live';
-          display: block;
-          height: 21px;
-          position: absolute;
-          right: 0;
-          top: 0;
-          -webkit-transform: skewX(-8deg);
-          transform: skewX(-8deg);
-          -webkit-transform-origin: bottom right;
-          transform-origin: bottom right;
-          min-width: 100%;
-          -webkit-box-align: center;
-          -ms-flex-align: center;
-          align-items: center;
-          color: #fff;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          font-size: 13px;
-          font-style: italic;
-          font-weight: 700;
-          line-height: 21px;
-          padding: 0 0.2rem;
-          text-transform: uppercase;
-        }
-      }
-      &bold {
-        font-weight: 900;
-        font-size: 40px;
-      }
-      &thin{
-        font-size: 16px;
-        font-weight: 600;
+    &title {
+      font-size: 18px;
+      img {
+        width: 20px;
+        height: 20px;
       }
     }
 
-    &--grey {
-      &till {
-        color: #909090;
-        font-size: 14px;
-        font-weight: 600;
-      }
+    &content {
+      font-weight: 400;
 
-      &bold {
-        font-size: 18px;
-        font-weight: bold;
-        padding: 13px;
-      }
-
-      &time {
-        font-size: 16px;
-        font-weight: 600;
-      }
-    }
-
-    &--black {
-      &till {
-        color: #909090;
-        font-size: 14px;
-        font-weight: 600;
-      }
-
-      &bold {
-        font-weight: 900;
-        font-size: 40px;
-      }
-      &thin{
-        font-size: 16px;
-        font-weight: 600;
+      img {
+        width: 300px;
+        height: 300px;
       }
     }
   }
-
 }
 
 @media only screen and (min-width: 660px) {
@@ -488,10 +407,10 @@ a {
   .match-picker {
     flex-direction: row;
     //width: 100%;
-    
+
     &__title {
       height: 90px;
-      max-width: 330px;;
+      max-width: 330px;
     }
 
     &__options {
@@ -511,30 +430,10 @@ a {
 
       &item {
         flex-direction: row;
-      }
-    }
-    &__item {
-      // padding: 22px 20px 22px 50px;
-      height: 130px;
-
-      &home {
-        max-width: 100%;
-        flex-direction: row;
-        &text {
-          padding: 10px;
+        &red {
+          border-bottom: 6px solid red;
         }
       }
-
-      &away {
-        max-width: 100%;
-        &inner {
-          flex-direction: row;
-        }
-        &text {
-          padding: 10px;
-        }
-      }
-
     }
   }
 }
