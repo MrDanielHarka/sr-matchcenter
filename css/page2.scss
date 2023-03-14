@@ -46,6 +46,8 @@ a {
   display: flex;
   padding: 2px;
   color: #909090;
+  font-weight: 600;
+  font-size: 14px;
 
   * {
     padding: 5px;
@@ -53,6 +55,9 @@ a {
 
   a {
     color: #909090;
+  }
+  &__arrow{
+    font-weight: 900;;
   }
 }
 

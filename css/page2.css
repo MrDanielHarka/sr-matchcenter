@@ -49,12 +49,17 @@ a {
   display: flex;
   padding: 2px;
   color: #909090;
+  font-weight: 600;
+  font-size: 14px;
 }
 .breadcrumbs * {
   padding: 5px;
 }
 .breadcrumbs a {
   color: #909090;
+}
+.breadcrumbs__arrow {
+  font-weight: 900;
 }
 
 .match-picker {
