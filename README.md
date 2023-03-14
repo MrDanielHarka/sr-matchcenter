@@ -34,7 +34,7 @@ https://xd.adobe.com/view/730cecba-eeec-4ca1-928a-06ea9b44ecf9-265f/
 - [ ] Main content of the 5 page.
 - [ ] Create 6 page.
 - [ ] Header and footer.
-- [ ] Compress images.
+- [ ] Compress/download images and icons.
 - [ ] Fix all the color/style/details.
 - [ ] Dragging/scroll.
 - [ ] Language switcher.
