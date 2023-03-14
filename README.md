@@ -29,7 +29,14 @@ https://xd.adobe.com/view/730cecba-eeec-4ca1-928a-06ea9b44ecf9-265f/
 - [x] Check the font-family: 'Mont' font.
 - [x] Flex wrapping of the item inside the box.
 - [x] Hover effect.
+- [ ] Finish 3 page.
+- [ ] Create 4 page.
+- [ ] Main content of the 5 page.
+- [ ] Create 6 page.
+- [ ] Header and footer.
 - [ ] Compress images.
+- [ ] Fix all the color/style/details.
+- [ ] Dragging/scroll.
 - [ ] Language switcher.
 
 **Coding**
