@@ -237,7 +237,7 @@ a {
   align-items: center;
 }
 .league__itemaway .arrow {
-  padding-left: 50px;
+  padding-left: 30px;
 }
 .league__item img {
   width: 30px;
@@ -320,6 +320,7 @@ a {
 @media only screen and (min-width: 660px) {
   .arrow {
     display: block;
+    font-size: 50px;
   }
   .match-picker {
     flex-direction: row;

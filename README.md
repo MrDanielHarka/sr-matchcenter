@@ -38,6 +38,7 @@ https://xd.adobe.com/view/730cecba-eeec-4ca1-928a-06ea9b44ecf9-265f/
 - [ ] Fix all the color/style/details.
 - [ ] Dragging/scroll.
 - [ ] Language switcher.
+- [ ] fix the Big arrow.
 
 **Coding**
 
