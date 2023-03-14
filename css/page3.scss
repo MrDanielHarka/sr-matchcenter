@@ -462,6 +462,7 @@ a {
     display: flex;
     justify-content: space-around;
     padding: 15px;
+    align-items: center;
 
     &:nth-child(odd) {
       background-color: #eff0f0;
